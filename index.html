@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="main.css">
+	
+  </head>
+  <body>
+      <div class="logo">
+          <img src="images/pokemon.png" alt="My Image">
+      </div>
+
+      <div class="selection">
+          <span class="arrow" onclick="changeText(false)"></span>
+          <input type="text" id="textField" value="Select Style">
+          <span class="arrow right" onclick="changeText(true)"></span>
+      </div>
+
+      <div class="left-container">
+          <div class="button1"> </div>
+          <div class="Sign-In"></div>
+          <div class="form-floating">
+              <select class="form-select" id="floatingSelect">
+                  <option selected></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+              </select>
+
+          </div>
+
+      </div>
+      /'Pokemon Card Container'
+      <div class="container">
+
+      </div>
+      <div class="side-container">
+          <div class="side-titel" onclick="window.open('HTML.html-Shortcut')">
+              <div class="side-grid" id="drop-container"></div>
+
+          </div>
+
+      </div>
+      <script src="action/main.js"></script>
+      <script src="action/main2.js"></script>
+      <script src="action/main3.js"></script>
+      <script src="action/main4.js"></script>
+      <script src="action/main5.js"></script>
+      <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+              apiKey: "AIzaSyAZBf9uCzv0HI5EFZWPuTrFAjYMmmZDWdA",
+              authDomain: "pokedex-1f8a3.firebaseapp.com",
+              projectId: "pokedex-1f8a3",
+              storageBucket: "pokedex-1f8a3.appspot.com",
+              messagingSenderId: "202096486002",
+              appId: "1:202096486002:web:d7cdf0817186a895b244eb",
+              measurementId: "G-89Y21RR9PN"
+          };
+
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+      </script>
+
+  </body>
+</html>
